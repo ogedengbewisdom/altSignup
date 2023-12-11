@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="styles.css" rel="stylesheet" >
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="containter">
+        <div class="firstPart">
+            <header class="headerlogo">
+                <img src="/assets/logo/Logo.png" alt="logo" width="77.3" height="80" />
+            </header>
+            
+            <section>
+                <h2 class="section_h2">For Individuals</h2>
+                <p class="section_p">
+                    Start benefiting from the wellness experience. 
+                    For<br> companies looking on increasing productivity, and improving<br> organization wellness.
+                </p>
+                <p class="section_pp">
+                    Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
+                </p>
+            </section>
+        </div>
+
+        <section>
+            <form>
+                <div class="flexInput">
+                    <div class="form_control">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName"/>
+                    </div>
+                    <div class="form_control addmargin">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName"/>          
+                    </div>
+                </div>
+                <div class="flexInput">
+                    <div class="form_control">
+                        <label for="genderDropdown">Gender</label>
+                        <select id="genderDropdown" name="genderDropdown" style="color: #999;">
+                            <option value="" class="option" disabled selected hidden>Select here now</option>
+                            <option class="option" style="color: #000;" value="male">Male</option>
+                            <option class="option" style="color: #000;" value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form_control addmargin">
+                        <label for="date">Date of birth</label>
+                        <input type="date" id="date" name="date" class="date"/>          
+                    </div>
+                </div>
+                <div class="flexInput">
+                    <div class="form_control">
+                        <label for="weight">Weight (KG)</label>
+                        <input type="text" id="weight" name="weight" placeholder="Enter Weight" />          
+                    </div>
+                    <div class="form_control addmargin">
+                        <label for="height">Height (CM)</label>
+                        <input type="text" id="height" name="height" placeholder="Enter height here" />          
+                    </div>
+                </div>
+               <div class="form_control">
+                    <label for="levelDropdown">Activity Level</label>
+                    <select id="levelDropdown" name="levelDropdown" style="color: #999;">
+                        <option value="" class="option" disabled selected hidden>Select here</option>
+                        <option class="option" style="color: #000;" value="beginner">Beginner</option>
+                        <option class="option" style="color: #000;" value="Intermediate">Intermediate</option>
+                        <option class="option" style="color: #000;" value="amateur">Amateur</option>
+                        <option class="option" style="color: #000;" value="proffessional">Proffessional</option>
+                        <option class="option" style="color: #000;" value="expert">Expert</option>
+                    </select>
+               </div>
+               <div class="form_control">
+                    <label for="password">Password</label>
+                    <div class="passwordContainer">
+                        <input type="password" id="password" name="password"/>
+                        <span id="toggle" class="eye-toggle">
+                            <img src="/assets/logo/show.png"/>
+                        </span>
+                    </div>
+            </div>
+            
+                <button type="submit" class="btn">
+                    <p>Register</p>
+                </button>
+
+                <footer class="foot">
+                    <p>By clicking Register, you agree to our <span><a href="#">Terms of Use</a></span> and our <span><a href="#">Privacy Policy</a></span></p>
+                </footer>
+            </form>
+
+            <footer class="footer">
+                <p>By clicking Register, you agree to our <span><a href="#">Terms of Use</a></span> and our <span><a href="#">Privacy Policy</a></span></p>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>

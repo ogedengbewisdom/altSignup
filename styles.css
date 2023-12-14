@@ -34,15 +34,16 @@ body {
 }
 
 .firstPart {
-    margin-top: 9rem;
+    margin-top: 12.81rem;
     width: 40%;
+    margin-right: 7.5px;
 }
 .section_h2 {
     color: #000B0A;
     line-height: 50px;
     font-weight: 700;
     font-size: 40px;
-    margin: 1.5rem 0 0.8rem 0;
+    margin: 3.12px 0 1.25px 0;
     font-family: BoldBrown;
 }
 
@@ -69,38 +70,51 @@ body {
 }
 
 .addmargin {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 form {
     background-color: #FFF;
-    margin-top: 3rem;
+    margin-top: 5.06rem;
     box-shadow: 2px 2px 17px 2px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
 .form_control input, .form_control select {
     width: 100%;
     border-radius: 2px;
     padding: 0.8rem 1rem;
-    margin-top: 0.8rem;
+    margin-top: 0.62rem;
     outline: none;
     border: 1px solid #edeff2;
 }
+
+#genderDropdown {
+  padding-right: 2.4rem;
+}
+
+/* select::placeholder {
+  background-color: red;
+} */
+
 
 .form_control label {
     color: #011C34;
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
-    margin-top: 1.5rem;
+    margin-top: 1.88rem;
     font-family: sofiaPro;
 }
 
-.form_control input:focus {
+.form_control input:focus, .form_control select:focus{
     border: 1px solid #7bd9d0;
     box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+  color: gray;
 }
 /* 
 .date::-webkit-calendar-picker-indicator {
@@ -136,7 +150,8 @@ form {
     width: 100%;
     border-radius: 2px;
     padding: 0.8rem 1rem;
-    margin-top: 0.8rem;
+    margin-top: 1.88rem;
+    margin-bottom: 1rem;
     outline: none;
     /* border: 1px solid #2EC4B6; */
     border: none;
@@ -151,21 +166,22 @@ form {
   }
 
   footer {
-    padding: 0.8rem 1rem;
-    margin-top: 0.8rem;
+    padding: 1px 1rem 1.5rem 1rem;
   }
 
   footer p {
     text-align: center;
-    line-height: 25px;
-    font-size: 14px;
-    font-weight: 500;
+    line-height: 1.5625rem;
+    font-size: 0.875rem;
+    font-weight: 400;
     font-family: sofiaPro;
   }
 
   footer p span a{
     color: #2EC4B6;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 0.875rem;
+    font-style: normal;
   }
 
   .footer {
@@ -185,7 +201,7 @@ form {
   @media screen and (max-width: 481px) {
     .containter {
       flex-direction: column;
-      margin: 3rem 1rem 2rem 1rem;
+      margin: 1.88rem 1.5rem 1.5rem 1.5rem;
       padding: 0rem;
     }
     .firstPart {
@@ -194,8 +210,8 @@ form {
     }
 
     .section_h2 {
-        line-height: 29.4px;
-        font-size: 30px;
+        line-height: normal;
+        font-size: 1.875rem;
         margin: 1.2rem 0 0.5rem 0;
     }
 
@@ -220,17 +236,19 @@ form {
         display: block;
         color: #737373;
         font-weight: 300;
-        line-height: 25px;
-        font-size: 16px;
+        line-height: 1.5625rem;
+        font-size: 1rem;
         font-family: LightBrown;
     }
 
     form {
-        padding: 1rem;
-        margin-top: 2rem;
+        padding: 1.5rem 1rem;
+        margin-top: 2.5rem;
     }
     .footer {
         display: block;
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
       }
       .foot {
         display: none;

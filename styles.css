@@ -97,7 +97,7 @@ form {
 }
 
 #genderDropdown {
-  padding-right: 2.4rem;
+  padding-right: 6rem;
 }
 
 /* select::placeholder {
@@ -135,11 +135,11 @@ form {
     color: #999; 
   } */
 
-  .passwordContainer {
+  .passwordContainer, .dateContainer {
     position: relative;
   }
   
-  .eye-toggle {
+  .eye-toggle, .date {
     position: absolute;
     top: 65%;
     right: 10px; 
@@ -194,6 +194,12 @@ form {
     display: none;
   }
 
+  @media screen and (max-width: 871px) {
+    .addmargin {
+      margin-left: 0.3rem;
+  }
+  }
+
   @media screen and (max-width: 768px) {
     .containter {
         padding: 2rem;
@@ -201,6 +207,8 @@ form {
     .firstPart {
         width: 60%;
     }
+
+
   }
   
 
@@ -258,5 +266,8 @@ form {
       }
       .foot {
         display: none;
+      }
+      #genderDropdown {
+        padding-right: 0;
       }
   }
